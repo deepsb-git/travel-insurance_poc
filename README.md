@@ -3,7 +3,38 @@
 ## Travel_Plan as well as Plan_category based curd app through spring boot
 
 ```
-<img width="1303" height="561" alt="image" src="https://github.com/user-attachments/assets/3566e5ad-6bf0-4083-9188-362af73db861" />
+travel-plan-operations-controller through swagger api
+
+PUT
+/travelplans/api/update
+
+PUT
+/travelplans/api/status-change/{planId}/{status}
+
+POST
+/travelplans/api/register
+
+GET
+/travelplans/api/find/{planId}
+
+GET
+/travelplans/api/categories
+
+GET
+/travelplans/api/all
+
+DELETE
+/travelplans/api/delete/{planId}
+
+DB Table
+----------
+SELECT * FROM TRAVEL_PLAN;
+PLAN_CATEGORY_ID  	PLAN_ID  	PLAN_MIN_BUDGET  	CREATED_DATE  	UPDATED_DATE  	ACTIVE_SW  	CREATED_BY  	UPDATED_BY  	PLAN_NAME  	PLAN_DESCRIPTION  
+
+SELECT * FROM PLAN_CATEGORY;
+CATEGORY_ID  	CREATED_DATE  	UPDATED_DATE  	ACTIVE_SW  	CATEGORY_NAME  	CREATED_BY  	UPDATED_BY  
+1	null	null	active	schengen	null	null
+2	null	null	active	corporate	null	null
 
 USER@fullstack MINGW64 /g/springboot_proj/travel_insurance_proj (master)
 $ git status
